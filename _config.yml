@@ -60,7 +60,7 @@ kramdown:
 # disqus_username: wwwek
 
 # Gitalk
-  gitalk:
+gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: Ov23liYRfADVVvy8Mi22                            #生成的clientID
   clientSecret: 5bf9066d6a8d94afb59ae174a58834177146c2d7    #生成的clientSecret
