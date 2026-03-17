@@ -6,6 +6,7 @@ email: wwwek2024@gmail.com
 description: "这是一个乱七八糟的地方 所以叫做乱七八糟仓库"
 keyword: "wwwek, wwwek的博客, 生活"
 url: "https://wwwek.github.io"          # your host, for absolute URL
+timezone: Asia/Shanghai                  # 你的时区
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/wwwek/wwwek.github.io.git" # you code repository
 
