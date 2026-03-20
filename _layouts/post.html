@@ -226,3 +226,15 @@ layout: default
     }
 </style>
 {% endif %}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var container = document.querySelector('.post-container');
+    if (container) {
+      container.querySelectorAll('img').forEach(function(img) {
+        if (!img.hasAttribute('loading')) {
+          img.setAttribute('loading', 'lazy');
+        }
+      });
+    }
+  });
+</script>
