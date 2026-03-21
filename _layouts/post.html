@@ -245,16 +245,17 @@ layout: default
 <!-- 折叠块动态三角：为 <details> 标签添加 ▶ 和 ▼ 切换图标 -->
 <style>
 details summary {
-  list-style: none;
+  list-style: none;          /* 隐藏浏览器默认三角 */
   cursor: pointer;
   position: relative;
-  padding-left: 1.2em;
+  padding-left: 1.2em;       /* 给三角留出位置 */
 }
-details summary span:first-child {
+details summary::before {
+  content: "▶";              /* 折叠时显示右三角 */
   position: absolute;
   left: 0;
 }
-details[open] summary span:first-child {
-  content: "▼";
+details[open] summary::before {
+  content: "▼";              /* 展开时显示下三角 */
 }
 </style>
