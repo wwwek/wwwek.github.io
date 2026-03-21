@@ -226,6 +226,9 @@ layout: default
     }
 </style>
 {% endif %}
+
+
+<!-- 图片懒加载：让文章区域内的图片延迟加载，提升页面加载速度 -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     var container = document.querySelector('.post-container');
@@ -238,3 +241,20 @@ layout: default
     }
   });
 </script>
+
+<!-- 折叠块动态三角：为 <details> 标签添加 ▶ 和 ▼ 切换图标 -->
+<style>
+details summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.2em;
+}
+details summary span:first-child {
+  position: absolute;
+  left: 0;
+}
+details[open] summary span:first-child {
+  content: "▼";
+}
+</style>
